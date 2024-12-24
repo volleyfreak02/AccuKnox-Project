@@ -1,13 +1,14 @@
+# Namespace Configuration
 kind: Namespace
 apiVersion: v1
 metadata:
   name: poc-wisecow
   labels:
-    name: poc-wisecow
-
-
+    environment: poc
 
 ---
+
+# Deployment Configuration
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
@@ -27,6 +28,6 @@ spec:
     spec:
       containers: 
         - name: wisecow-pod
-          image: ${AWS_ACCOUNT_ID}.dkr.ecr.ap-south-1.amazonaws.com/accuknox:latest
+          image: 533267100883.dkr.ecr.ap-south-1.amazonaws.com/accuknox:latest
           ports: 
             - containerPort: 4499
