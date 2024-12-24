@@ -27,6 +27,6 @@ spec:
     spec:
       containers: 
         - name: wisecow-pod
-          image: ${AWS_ACCOUNT_ID}.dkr.ecr.ap-northeast-2.amazonaws.com/accuknox:latest
+          image: ${AWS_ACCOUNT_ID}.dkr.ecr.ap-south-1.amazonaws.com/accuknox:latest
           ports: 
             - containerPort: 4499
